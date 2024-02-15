@@ -52,6 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
       children: [
         Text('From: ${singleRow.startLoc ?? ''}', style: TextStyle(color: Colors.green[200]),),
         Text('From: ${singleRow.endLoc ?? ''}', style: TextStyle(color: Colors.red[200])),
+        Image.network(singleRow.image ?? ''), // This line added
          // Image.network(singleRow.image)
       ],
     );
